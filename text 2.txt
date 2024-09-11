@@ -1,0 +1,30 @@
+def troubleshoot_fault():
+    print("Computer Troubleshooting Guide")
+    print("--------------------------------")
+
+    fault = input("Describe the fault (e.g., won't turn on, slow, freezes): ")
+
+    if "turn on" in fault.lower():
+        print("Check the power cord connection")
+        print("Check the power button")
+        print("Check for blown fuse or tripped circuit")
+
+    elif "slow" in fault.lower():
+        print("Check for malware or viruses")
+        print("Check for disk space and free up space if necessary")
+        print("Check for software updates")
+
+    elif "freezes" in fault.lower():
+        print("Check for overheating")
+        print("Check for driver updates")
+        print("Check for software conflicts")
+
+    elif "connect" in fault.lower() and "internet" in fault.lower():
+        print("Check network cables and connections")
+        print("Check Wi-Fi settings")
+        print("Check for internet service provider outages")
+
+    else:
+        print("Sorry, I couldn't identify the fault. Please try again.")
+
+troubleshoot_fault()
